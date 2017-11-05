@@ -15,9 +15,19 @@ public class Main {
     }
 
 
-    public static void zadania2(){
+    public static void zadania2() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj slowa w formacie CC");
+        String slowa = scanner.nextLine();
+        int amount = 1;
 
+        for (int i = 0; i < slowa.length(); i++) {
+            if (Character.isUpperCase(slowa.charAt(i))) {
+                amount++;
 
+            }
+        }
+        System.out.println(slowa + "-"+ amount);
 
 
     }
@@ -58,11 +68,6 @@ public class Main {
             name = scanner.nextLine();
         }
         */
-
-
-
-
-
 
 
     }
